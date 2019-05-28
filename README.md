@@ -32,6 +32,12 @@ The next step is to take the hog features.
  Then I will feed the features into SVM classifier, but since it’s a binary classifier I used OneVsRest approach to train it for multiple classes. The evaluation criteria are done using 10-Fold cross-validation, as seen in the experiment section.
  
  ### Using facial landmarks relative positions
+ 
+ 
+ 
+ ![Alt text](/facelandmarks.png?raw=true "facelandmarks")
+ 
+ 
 By knowing the position of each landmark in the face the variations and unwanted features will be minimized and we can train a very strong classifier. One solution is to use the positions of the landmarks as they are and train an SVM classifier on them. However, this approach is not scale-invariant nor rotation-invariant. 
 
 To solve the scale-invariant problem, I will store the relative position of each landmark with respect to the mean landmark point.  The rotation-invariant problem can be solved by storing the angle of the slope between the landmark and the mean landmark. When doing this any rotation of the
