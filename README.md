@@ -112,6 +112,5 @@ For each landmark, we will have 5 features, the original landmark point (X(i),Y(
 
 ![Alt text](/externalTest.png?raw=true "Results of external test")
 
-The model predicted 8 out of 10, this may be due to the overfitting in the neutral class because it has 112 images whereas only 18 images in contempt class. However we can merge some classes to have more balanced dataset and then more accurate model.
-
+The model predicted 8 out of 10, this may be due to the overfitting in the neutral class because it has 112 images whereas only 18 images in contempt class. However, we can merge some classes to have a more balanced dataset and then more accurate model.
 
